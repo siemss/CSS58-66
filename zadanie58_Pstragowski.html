@@ -1,0 +1,101 @@
+<html>
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<body>
+<ul>
+<h1><li>Co to są pseudoklasyk?</li></h1>
+<br>
+<li>CSS przewiduje kilka ściśle określonych klas pozwalających na formatowanie niektórych 
+elementów dokumentu są to Pseudoklasy</li>
+
+<h1><li>Uwaga dotycząca dwukropka :</li></h1>
+<br>
+<li>Szalenie istotnym elementem w tej konstrukcji jest dwukropek występujący pomiędzy 
+selektorem a nazwą klasy</li>
+
+<h1><li>Tabela(wykonana w htmlu) opisującą pseudoklasy.</li></h1>
+<br>
+
+<table>
+  
+      <tr>
+         <th><b>A:link,</b></th> <td>odpowiada za wygląd hiperłącza, jeżeli nie zostało ono jeszcze odwiedzone.</td> 
+      </tr>
+      <tr>
+        <th><b>A:visited,</b></th> <td>odpowiada za formatowanie hiperłącza już odwiedzonego</td>
+      </tr>
+      <tr>
+        <th><b>A:hover, </b></th> <td>zmiany pewnych elementów po najechaniu na nie urządzeniem 
+wskazującym (np. myszą), np. odsyłacz, nad którym zatrzymano kusor
+lub element blokowy DIV.
+</td>
+      </tr>
+      <tr>
+         <th><b>A:active,</b></th> <td>pozwala nadać dowolne formatowanie elementowi po nakierowaniu na 
+niego wskaźnika myszy i wciśnięciu przycisku, ale przed jego 
+zwolnieniem (odsyłacz aktywnykliknięty). </td>
+      </tr>
+  <tr>
+        <th><b>A:focus, </b></th> <td>jeżeli chcemy, by właśnie wyświetlany odsyłacz z menu był 
+formatowany innym kolorem. Odsyłacz posiadający tzw fokuszaznaczony przy poruszaniu się po dokumencie przy pomocy klawisza
+tabulacji: naciśnięcie w tym momencie klawisza ENTER spowoduje taką 
+reakcję przeglądarki, jakby dany odsyłacz został kliknięty.</td>
+      </tr>
+      <tr>
+         <th><b>A::lang</b></th> <td>formatowanie wielojęzykowych dokumentów.
+</td> 
+      </tr>
+      <tr>
+         <th><b>:first-child</b></th> <td>umożliwia określenie formatowania dla pierwszego dziecka wybranego 
+elementu. </td>
+      </tr>
+     
+</table>
+
+
+
+
+<h1><li>Zastosowanie pseudoklasy :active</li></h1>
+<br>
+<li>można używać jako uzupełnienia definicji odnośników</li>
+<li>jako elementu poprawiającego czytelność formularzy</li>
+
+<h1><li>Przykłady (trzy) kodów definiowania pseudoklas (wraz z tematem) </li></h1>
+<br>
+<li><textarea rows="30" cols="30"> 
+
+A /* Definicja odsyłacza podstawowego*/
+ {
+ font-size:12pt;
+ text-decoration:none;
+ }
+A:link
+ {
+ color:navy;
+ }
+A:visited
+ {
+ color:green;
+ }
+A:hover
+ {
+ color:red;
+ text-decoration:underline;
+ }
+A:focus
+ {
+ color:braun;
+ }
+
+</textarea></li>
+
+</ul>
+
+
+
+
+
+</body>
+</html>
